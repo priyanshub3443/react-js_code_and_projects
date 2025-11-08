@@ -1,7 +1,7 @@
-import styles from "./item.module.css";
+import styles from "./Item.module.css";
 const Item = ({ foodItems }) => {
   return (
-    <li className="list-group-item kg-item"><span className={styles["p-span"]}>{foodItems}</span></li>
+    <li className={`list-group-item ${styles["kgItem"]}`} > <span className={styles.pSpan}>{foodItems}</span></li >
   )
 }
 export default Item;
