@@ -1,3 +1,7 @@
+import { MdOutlineAddToHomeScreen } from "react-icons/md";
+
+
+
 import { useState } from "react";
 
 function AddTodo({ onNewItem }) {
@@ -38,7 +42,7 @@ function AddTodo({ onNewItem }) {
             className="btn btn-success kg-button"
             onClick={handleAddButtonClicked}
           >
-            Add
+            <MdOutlineAddToHomeScreen />
           </button>
         </div>
       </div>
