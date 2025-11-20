@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-const PostList = createContext({
+export const PostList = createContext({
   postList: [],
   addPost: () => {},
   deletePost: () => {},
@@ -11,7 +11,10 @@ const PostListReducer = (currPostList, action) => {
 };
 
 const PostlistProvider = ({ children }) => {
-  const [postList, dispatchPostList] = useReducer(PostListReducer, []);
+  const [postList, dispatchPostList] = useReducer(
+    PostListReducer,
+    DEFAULT_POST_LIST
+  );
 
   const addPost = () => {};
   const deletePost = () => {};
@@ -22,5 +25,16 @@ const PostlistProvider = ({ children }) => {
     </PostList.Provider>
   );
 };
+
+const DEFAULT_POST_LIST = [
+  {
+    id: "1",
+    title: "Going to mumbai for my vacations. Hope to enjoy a lot. peace out.",
+    body: "HI friends,Iam going tyo Mumbai for my Vacation",
+    reactions: 2,
+    userId: "user-9",
+    tags: ["vacation", "Mumbai", "Enjoy"],
+  },
+];
 
 export default PostlistProvider;
