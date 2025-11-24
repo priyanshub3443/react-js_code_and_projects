@@ -13,25 +13,37 @@ const CreatePost = () => {
         />
       </div>
       <div className="mb-3">
-        <label htmlFor="body" className="form-label">
-          Body
+        <label htmlFor="userId" className="form-label">
+          Enter your userId
         </label>
         <input
           type="text"
           className="form-control"
-          id="title"
-          placeholder="How are you feel today ..."
+          id="userID"
+          placeholder="Your User ID"
         />
       </div>
       <div className="mb-3">
-        <label htmlFor="title" className="form-label">
-          Post Title
+        <label htmlFor="body" className="form-label">
+          Body
+        </label>
+        <textarea
+          rows={4}
+          type="text"
+          className="form-control"
+          id="title"
+          placeholder="Tell us about its ..."
+        />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="reactions" className="form-label">
+          Number of reactions
         </label>
         <input
           type="text"
           className="form-control"
-          id="title"
-          placeholder="How are you feel today ..."
+          id="reactions"
+          placeholder="How many people reacted to this post"
         />
       </div>
 
