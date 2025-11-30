@@ -1,7 +1,14 @@
-const WelcomeMessage = () => {
+const WelcomeMessage = ({ onGetPostClick }) => {
   return (
-    <center>
-      <h1 className="welcome-message">There is no post</h1>
+    <center className="welcome-message">
+      <h1>There is no post</h1>
+      <button
+        type="button"
+        onClick={onGetPostClick}
+        className="btn btn-primary"
+      >
+        Get post from server
+      </button>
     </center>
   );
 };
