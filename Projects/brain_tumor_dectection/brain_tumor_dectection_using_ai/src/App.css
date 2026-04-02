@@ -1,0 +1,72 @@
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; }
+}
+
+/* Glass */
+.glass-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Scanner */
+.scanner {
+  height: 150px;
+  border: 2px solid cyan;
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-line {
+  height: 4px;
+  background: cyan;
+  position: absolute;
+  width: 100%;
+  animation: scan 2s infinite;
+}
+
+@keyframes scan {
+  0% { top: 0; }
+  100% { top: 100%; }
+}
+
+/* Overlay */
+.image-container {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5px;
+}
+/* PREMIUM GRADIENT */
+.premium-navbar {
+  background: linear-gradient(90deg, #4b0082, #6a0dad, #1e3c72);
+}
+
+.premium-footer {
+  background: linear-gradient(90deg, #1e3c72, #6a0dad, #4b0082);
+}
+
+/* Glow Effect */
+.glow-text {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+.btn-light {
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-light:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
