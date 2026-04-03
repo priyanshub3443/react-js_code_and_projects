@@ -1,0 +1,37 @@
+.app-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #020617;
+  color: white;
+  border-right: 1px solid #1e293b;
+}
+
+.main-content {
+  flex: 1;
+  background: #0f172a;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+}
+
+.upload-box {
+  border: 2px dashed #38bdf8;
+  border-radius: 12px;
+  background: #020617;
+}
+
+.upload-box input[type="file"] {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+}
+
+h5 {
+  font-weight: 600;
+}
